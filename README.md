@@ -33,4 +33,15 @@ Nurse Connect is a home healthcare website designed to present healthcare servic
 
 ## Developer
 
+## Website Screenshots
+
+### Homepage
+![Nurse Connect Homepage](screenshots/homepage.png)
+
+### Services
+![Nurse Connect Services](screenshots/services.png)
+
+### Contact
+![Nurse Connect Contact](screenshots/contact.png)
+
 Developed as a web development project using HTML and CSS.
