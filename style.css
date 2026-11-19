@@ -9,13 +9,13 @@
 }
 
 html {
-    scroll-behavior: rough;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: Arial, sans-serif;
-    color: #f4f8f4;
-    background: #5e629e;
+    color: #334155;
+    background: #f3efef;
     line-height: 1.6;
 }
 
@@ -45,9 +45,9 @@ img {
    ========================================================= */
 
 .navbar {
-    background: #b6d387;
+    background: #fdfbfb;
     padding: 20px 0;
-    border-bottom: 2px solid #a2a4a7;
+    border-bottom: 1px solid #e2e8f0;
 }
 
 .navbar .container {
@@ -59,29 +59,30 @@ img {
 .logo {
     font-size: 30px;
     font-weight: 1000;
-    color: #072457;
+    color: #102a56;
 }
 
 .nav-links {
     display: flex;
-    gap: 30px;
+    gap: 25px;
     list-style: none;
 }
 
 .nav-links a {
-    color: #1f2937;
-    font-weight: 700;
-    font-size: 25px;
+    color: #334155;
+    font-weight: 600;
+    font-size: 16px;
 }
 
 .nav-links a:hover {
-    color: #db1009;
+    color: #b1104e;
     padding: 5px;
 }
 
 header {
-  position: sticky;
-  top: 0;
+    position: sticky;
+    top: 0%;
+    z-index: 1000;
 }
 
 
@@ -98,62 +99,52 @@ header {
 }
 
 .btn-primary {
-    background: #d3286a;
-    color: #fffefe;
+    background: #ca0b54;
+    color: #e6e3e3;
 }
 
 .btn-primary:hover {
-background: #4b3f81;                    
-}
-
-button:focus,
-a:focus,
-input:focus {
-  outline: 3px solid rgb(7, 7, 216);
-  outline-offset: 3px;
+    background: #221017;
 }
 
 
 /* =========================================================
-   5. GOOD SECTION
+   5. HERO SECTION
    ========================================================= */
 
-.good {
-    min-height: 700px;
+.hero {
+    min-height: 600px;
     display: flex;
     align-items: center;
-    background:  #065f0d;
-    color: #dbd8d8;
+    background: #102a57;
+    color: #f5f2f2;
 }
 
-.good-content {
+.hero-content {
     width: 50%;
     padding: 40px 5%;
 }
 
-.good-content h1 {
-    font-size: 24px;
+.hero-content h1 {
+    font-size: 50px;
     line-height: 1.1;
     margin-bottom: 20px;
 }
 
-.good-content h2 {
+.hero-content p {
     font-size: 18px;
-}
-
-.good-content p {
-    font-size: 20px;
     margin-bottom: 30px;
     max-width: 550px;
 }
 
-.good-image {
+.hero-image {
     width: 50%;
 }
 
-.good-image img {
+.hero-image img {
     width: 100%;
     height: 500px;
+    aspect-ratio: 4 / 3;
     object-fit: cover;
     border-radius: 20px;
 }
@@ -164,47 +155,47 @@ input:focus {
    ========================================================= */
 
 .services {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 40px 16px;
+    padding: 80px 5%;
+    background: #c0cedb;
+    text-align: center;
 }
 
 .services h2 {
-  text-align: center;
-  margin-bottom: 24px;
+    font-size: 40px;
+    color: #102a56;
+    margin-bottom: 30px;
 }
 
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .service-card {
-  background: #cac8c8;
-  border: 1px solid #cdd0d3;
-  border-top: 5px solid #b9e713;
-  border-radius: 20px;
-  padding: 24px 20px;
-  box-shadow: 0 2px 6px rgba(190, 12, 12, 0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  font-size: 20px;
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 15px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 8px 25px rgba(16, 42, 86, 0.08);
+    transition: transform 0.1s ease, box-shadow 0.3s ease;
 }
 
 .service-card:hover {
-  transform: translateY(-9px);
-  box-shadow: 0 8px 18px rgba(187, 236, 9, 0.12);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(16, 42, 86, 0.15);
 }
 
 .service-card h3 {
-  margin: 0 0 10px;
-  color: #00583f;
+    color: #102a56;
+    font-size: 26px;
+    margin-bottom: 15px;
 }
 
 .service-card p {
-  margin: 0;
-  line-height: 1.5;
-  color: #3f0c0c;
+    color: #354761;
 }
 
 
@@ -214,26 +205,22 @@ input:focus {
 
 .about {
     padding: 80px 5%;
-    background: #065f0d;
+    background: #102a56;
 }
 
 .about-content {
     max-width: 1200px;
     margin: auto;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    align-items: left;
+    gap: 60px;
+    align-items: center;
 }
 
 .about-image img {
     width: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-    display: flex;
-    justify-content: flex-end;
-    order: 2;
-    order: 1;
+    border-radius: 20px;
 }
 
 .about-text h2 {
@@ -259,12 +246,13 @@ input:focus {
 
 .why-us {
     padding: 80px 5%;
-    background: #b6d387;
+    background: #c6dbf1;
 }
 
 .why-us-content {
     max-width: 1200px;
     margin: auto;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
@@ -272,15 +260,15 @@ input:focus {
 }
 
 .why-us-text h2 {
-    font-size: 40px;
-    color: #152746;
-    margin-bottom: 20px;
+    font-size: 34px;
+    color: #102a56;
+    margin-bottom: 28px;
 }
 
 .why-us-text > p {
     margin-bottom: 30px;
-    color: #131f30;
-    font-size: 17px;
+    color: #0a0411;
+    font-size: 20px;
 }
 
 .feature {
@@ -288,18 +276,18 @@ input:focus {
 }
 
 .feature h3 {
-    color: #071329;
-    font-size: 20px;
+    color: #06388f;
+    font-size: 22px;
     margin-bottom: 5px;
 }
 
 .feature p {
-    color: #3d0505;
+    color: #040c18;
+    font-size: 18px;
 }
 
 .why-us-image img {
     width: 100%;
-    height: 100%;
     border-radius: 20px;
 }
 
@@ -310,7 +298,7 @@ input:focus {
 
 .contact {
     padding: 80px 5%;
-    background: #105610;
+    background: #102a56;
     color: #ffffff;
     text-align: center;
 }
@@ -321,13 +309,23 @@ input:focus {
 }
 
 .contact h2 {
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 15px;
 }
 
 .contact p {
     font-size: 20px;
     margin-bottom: 30px;
+}
+
+.phone-contact {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.phone-contact a {
+    color: #ffffff;
+    font-weight: 600;
 }
 
 
@@ -337,8 +335,8 @@ input:focus {
 
 footer {
     padding: 20px;
-    background: #9fa5ee;
-    color: #1f2937;
+    background: #7086aa;
+    color: #180303;
     text-align: center;
 }
 
@@ -362,6 +360,10 @@ footer {
         gap: 40px;
     }
 
+    .hero {
+    min-height: 550px;
+    }
+
 }
 
 
@@ -379,9 +381,13 @@ footer {
     }
 
     .nav-links {
-        gap: 15px;
+        gap: 12px;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .nav-links a {
+    font-size: 14px;
     }
 
 
@@ -481,6 +487,10 @@ footer {
     .nav-links {
         gap: 10px;
         font-size: 14px;
+    }
+
+    .navbar {
+    padding: 15px 0;
     }
 
     .hero-content h1 {
